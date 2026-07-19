@@ -2,7 +2,7 @@
 
 This project provides a comprehensive setup script to install essential PowerShell tools, improving your command-line experience with syntax highlighting, predictive intellisense, beautiful prompts, and more.
 
-## What this setup does
+## :question: What this setup does
 
 The `Setup-PowerShellTools.ps1` script automatically installs the following tools:
 
@@ -15,7 +15,7 @@ The `Setup-PowerShellTools.ps1` script automatically installs the following tool
 - `Pester` - The standard testing and mocking framework for PowerShell.
 - `platyPS` - Generates PowerShell external help from Markdown files.
 
-## Project structure
+## :file_folder: Project structure
 
 ```text
 powershell-developer-tools/
@@ -25,12 +25,12 @@ powershell-developer-tools/
 └── README.md
 ```
 
-## Prerequisites
+## :seedling: Prerequisites
 
 - Windows PowerShell 5.1 or PowerShell 7+.
 - `winget` (Windows Package Manager) is recommended for installing Oh-My-Posh and zoxide.
 
-## Setup
+## :ocean: Setup
 
 Before running the setup, ensure your PowerShell execution policy allows running scripts.
 
@@ -90,7 +90,7 @@ z projects   # Jumps directly to a directory named "projects" you've visited bef
 - Run `Invoke-Pester` in your project root to execute your tests.
 - Use `New-MarkdownHelp` to convert your documentation into standard help files.
 
-## Notes about the current setup
+## :notebook_with_decorative_cover: Notes about the current setup
 
 - The tools are installed using `Install-Module` from the PSGallery.
 - Oh-My-Posh and Zoxide will attempt to use `winget` if available for a more modern installation.
