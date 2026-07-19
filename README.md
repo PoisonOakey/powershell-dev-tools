@@ -48,7 +48,8 @@ Then, run the setup script to install all the tools:
 .\Setup-PowerShellTools.ps1
 ```
 
-> Important: The script primarily installs modules into your `CurrentUser` scope, so administrator privileges are usually not required. The script will also automatically configure your `$PROFILE` for you!
+>[!IMPORTANT]
+>The script primarily installs modules into your `CurrentUser` scope, so administrator privileges are usually not required. The script will also automatically configure your `$PROFILE` for you!
 
 ## How to use the tools
 
@@ -79,7 +80,8 @@ Get-ChildItem
 
 ### zoxide (z)
 Use `z` instead of `cd` to navigate quickly. It learns where you go, so you don't need full paths!
-*(Note: Because zoxide learns from your habits, it starts with an empty database. You must `cd` into a directory the old-fashioned way at least once before zoxide will remember it!)*
+>[!IMPORTANT]
+>Because zoxide learns from your habits, it starts with an empty database. You must `cd` into a directory the old-fashioned way at least once before zoxide will remember it!
 ```powershell
 z projects   # Jumps directly to a directory named "projects" you've visited before
 ```
