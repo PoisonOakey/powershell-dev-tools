@@ -48,11 +48,11 @@ Then, run the setup script to install all the tools:
 .\Setup-PowerShellTools.ps1
 ```
 
-> Important: The script primarily installs modules into your `CurrentUser` scope, so administrator privileges are usually not required. Make sure you add the suggested imports to your `$PROFILE` after installation!
+> Important: The script primarily installs modules into your `CurrentUser` scope, so administrator privileges are usually not required. The script will also automatically configure your `$PROFILE` for you!
 
 ## How to use the tools
 
-After running the setup and adding the recommended lines to your `$PROFILE` (`notepad $PROFILE`), restart your terminal. Here is how you can use your newly installed tools:
+After running the setup, simply restart your terminal (close and reopen it). Here is how you can use your newly installed tools:
 
 ### PSScriptAnalyzer
 To catch syntax errors and bad practices in your scripts:
@@ -79,6 +79,7 @@ Get-ChildItem
 
 ### zoxide (z)
 Use `z` instead of `cd` to navigate quickly. It learns where you go, so you don't need full paths!
+*(Note: Because zoxide learns from your habits, it starts with an empty database. You must `cd` into a directory the old-fashioned way at least once before zoxide will remember it!)*
 ```powershell
 z projects   # Jumps directly to a directory named "projects" you've visited before
 ```
