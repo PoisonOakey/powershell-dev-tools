@@ -51,7 +51,7 @@ Then, run the setup script to install all the tools:
 >[!IMPORTANT]
 >The script primarily installs modules into your `CurrentUser` scope, so administrator privileges are usually not required. The script will also automatically configure your `$PROFILE` for you!
 
-## How to use the tools
+## :sun_with_face: How to use the tools
 
 After running the setup, simply restart your terminal (close and reopen it). Here is how you can use your newly installed tools:
 
