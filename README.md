@@ -18,7 +18,7 @@ The `Setup-PowerShellTools.ps1` script automatically installs the following tool
 ## :file_folder: Project structure
 
 ```text
-powershell-developer-tools/
+powershell-dev-tools/
 ├── Setup-PowerShellTools.ps1
 ├── CHANGELOG.md
 ├── .gitignore
