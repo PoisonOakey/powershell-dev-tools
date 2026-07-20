@@ -1,6 +1,6 @@
 # PowerShell Developer Experience
 
-This project provides a comprehensive setup script to install essential PowerShell tools, improving your command-line experience with syntax highlighting, predictive intellisense, beautiful prompts, and more.
+>This project provides a comprehensive setup script to install essential PowerShell tools, improving your command-line experience with syntax highlighting, predictive intellisense, beautiful prompts, and more.
 
 ---
 
@@ -61,7 +61,7 @@ Then, run the setup script to install all the tools:
 
 ---
 
-## :sun_with_face: How to use the tools
+## :sun_with_face: How to Use
 
 After running the setup, simply restart your terminal (close and reopen it). Here is how you can use your newly installed tools:
 
@@ -107,7 +107,7 @@ z projects   # Jumps directly to a directory named "projects" you've visited bef
 
 ---
 
-## :notebook_with_decorative_cover: Notes about the current setup
+## :notebook_with_decorative_cover: Notes
 
 - The tools are installed using `Install-Module` from the PSGallery.
 - Oh-My-Posh and Zoxide will attempt to use `winget` if available for a more modern installation.
