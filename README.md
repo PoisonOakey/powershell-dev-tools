@@ -112,3 +112,6 @@ z projects   # Jumps directly to a directory named "projects" you've visited bef
 - The tools are installed using `Install-Module` from the PSGallery.
 - Oh-My-Posh and Zoxide will attempt to use `winget` if available for a more modern installation.
 - Features like predictive intellisense may require PowerShell 7+ for the absolute best experience.
+
+---
+  
