@@ -1,8 +1,10 @@
 # PowerShell Developer Experience
 
-This project provides a comprehensive setup script to install essential PowerShell tools, improving your command-line experience with syntax highlighting, predictive intellisense, beautiful prompts, and more.
+>This project provides a comprehensive setup script to install essential PowerShell tools, improving your command-line experience with syntax highlighting, predictive intellisense, beautiful prompts, and more.
 
-## What this setup does
+---
+
+## :question: What this setup does
 
 The `Setup-PowerShellTools.ps1` script automatically installs the following tools:
 
@@ -15,22 +17,28 @@ The `Setup-PowerShellTools.ps1` script automatically installs the following tool
 - `Pester` - The standard testing and mocking framework for PowerShell.
 - `platyPS` - Generates PowerShell external help from Markdown files.
 
-## Project structure
+---
+
+## :file_folder: Project structure
 
 ```text
-powershell-developer-tools/
+powershell-dev-tools/
 ├── Setup-PowerShellTools.ps1
 ├── CHANGELOG.md
 ├── .gitignore
 └── README.md
 ```
 
-## Prerequisites
+---
+
+## :seedling: Prerequisites
 
 - Windows PowerShell 5.1 or PowerShell 7+.
 - `winget` (Windows Package Manager) is recommended for installing Oh-My-Posh and zoxide.
 
-## Setup
+---
+
+## :ocean: Setup
 
 Before running the setup, ensure your PowerShell execution policy allows running scripts.
 
@@ -48,11 +56,14 @@ Then, run the setup script to install all the tools:
 .\Setup-PowerShellTools.ps1
 ```
 
-> Important: The script primarily installs modules into your `CurrentUser` scope, so administrator privileges are usually not required. Make sure you add the suggested imports to your `$PROFILE` after installation!
+>[!IMPORTANT]
+>The script primarily installs modules into your `CurrentUser` scope, so administrator privileges are usually not required. The script will also automatically configure your `$PROFILE` for you!
 
-## How to use the tools
+---
 
-After running the setup and adding the recommended lines to your `$PROFILE` (`notepad $PROFILE`), restart your terminal. Here is how you can use your newly installed tools:
+## :sun_with_face: How to Use
+
+After running the setup, simply restart your terminal (close and reopen it). Here is how you can use your newly installed tools:
 
 ### PSScriptAnalyzer
 To catch syntax errors and bad practices in your scripts:
@@ -60,14 +71,17 @@ To catch syntax errors and bad practices in your scripts:
 Invoke-ScriptAnalyzer -Path "C:\Path\To\Your\Script.ps1"
 ```
 
+
 ### tldr
 To get a quick, practical example for any command (instead of reading a huge manual):
 ```powershell
 tldr Get-Process
 ```
 
+
 ### PSReadLine & Oh-My-Posh
 These work automatically! You will notice syntax highlighting as you type, predictive text based on your history, and a beautiful custom prompt.
+
 
 ### Terminal-Icons
 Simply list the contents of a directory to see the new icons next to your files and folders:
@@ -77,18 +91,27 @@ ls
 Get-ChildItem
 ```
 
+
 ### zoxide (z)
 Use `z` instead of `cd` to navigate quickly. It learns where you go, so you don't need full paths!
+>[!IMPORTANT]
+>Because zoxide learns from your habits, it starts with an empty database. You must `cd` into a directory the old-fashioned way at least once before zoxide will remember it!
 ```powershell
 z projects   # Jumps directly to a directory named "projects" you've visited before
 ```
+
 
 ### Pester & platyPS
 - Run `Invoke-Pester` in your project root to execute your tests.
 - Use `New-MarkdownHelp` to convert your documentation into standard help files.
 
-## Notes about the current setup
+---
+
+## :notebook_with_decorative_cover: Notes
 
 - The tools are installed using `Install-Module` from the PSGallery.
 - Oh-My-Posh and Zoxide will attempt to use `winget` if available for a more modern installation.
 - Features like predictive intellisense may require PowerShell 7+ for the absolute best experience.
+
+---
+  
