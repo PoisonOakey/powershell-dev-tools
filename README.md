@@ -23,7 +23,8 @@ The `Setup-PowerShellTools.ps1` script automatically installs the following tool
 
 ```text
 powershell-dev-tools/
-├── Setup-PowerShellTools.ps1
+├── script/ 
+    └── Setup-PowerShellTools.ps1
 ├── CHANGELOG.md
 ├── .gitignore
 └── README.md
